@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Calendar, Clock, Sparkles, Send, CheckCircle2, Phone, User, MessageSquare } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
+import { logoImg } from '../utils/assets';
 
 export default function BookingModal({ isOpen, onClose, preselectedService }) {
   const [selectedServiceId, setSelectedServiceId] = useState(
@@ -74,7 +75,7 @@ export default function BookingModal({ isOpen, onClose, preselectedService }) {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden border border-sand-300 bg-white shadow-sm flex-shrink-0">
               <img
-                src="/images/logo.jpg"
+                src={logoImg}
                 alt="Aura Spa Logo Oficial"
                 className="w-full h-full object-cover object-center"
               />

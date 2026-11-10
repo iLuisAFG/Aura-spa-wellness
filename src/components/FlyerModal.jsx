@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Download, Sparkles, ZoomIn } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 export default function FlyerModal({ isOpen, onClose }) {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -7,27 +8,27 @@ export default function FlyerModal({ isOpen, onClose }) {
   const flyers = [
     {
       title: 'Menú Oficial 1: Masajes Relajantes & Cuello',
-      src: '/images/flyers/flyer-masajes-1.jpg',
+      src: getAssetUrl('/images/flyers/flyer-masajes-1.jpg'),
       category: 'Masajes',
     },
     {
       title: 'Menú Oficial 2: Descontracturantes, Piernas & Ventosas',
-      src: '/images/flyers/flyer-masajes-2.jpg',
+      src: getAssetUrl('/images/flyers/flyer-masajes-2.jpg'),
       category: 'Masajes Terapéuticos',
     },
     {
       title: 'Menú Oficial 3: Cuidados de la Piel & Faciales',
-      src: '/images/flyers/flyer-faciales.jpg',
+      src: getAssetUrl('/images/flyers/flyer-faciales.jpg'),
       category: 'Faciales & Post-Operatorio',
     },
     {
       title: 'Menú Oficial 4: Paquete Reductivo Premium ($3,500)',
-      src: '/images/flyers/flyer-reductivos-premium.jpg',
+      src: getAssetUrl('/images/flyers/flyer-reductivos-premium.jpg'),
       category: 'Reductivos Abdomen & Laterales',
     },
     {
       title: 'Menú Oficial 5: Paquete Reductivo Básico ($1,299)',
-      src: '/images/flyers/flyer-reductivos-basico.jpg',
+      src: getAssetUrl('/images/flyers/flyer-reductivos-basico.jpg'),
       category: 'Reductivos Abdomen',
     },
   ];

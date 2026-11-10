@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Calendar, Phone } from 'lucide-react';
+import { logoImg } from '../utils/assets';
 
 export default function Navbar({ onOpenBooking }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,7 @@ export default function Navbar({ onOpenBooking }) {
             >
               <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-105 border border-sand-300/40 bg-cream-50 shadow-sm">
                 <img
-                  src="/images/logo.jpg"
+                  src={logoImg}
                   alt="Aura Spa Wellness Logo Oficial"
                   className="w-full h-full object-cover object-center"
                 />
@@ -155,7 +156,7 @@ export default function Navbar({ onOpenBooking }) {
             <div className="flex items-center justify-between pb-6 border-b border-sand-200">
               <div className="flex items-center gap-2.5">
                 <img
-                  src="/images/logo.jpg"
+                  src={logoImg}
                   alt="Aura Spa Logo"
                   className="w-9 h-9 rounded-full object-cover border border-sand-300"
                 />

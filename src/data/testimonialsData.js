@@ -1,10 +1,12 @@
+import { client1Img, client2Img } from '../utils/assets';
+
 export const testimonialsData = [
   {
     id: 1,
     name: 'Mariana Alcocer',
     treatment: 'Masaje Relajante de Cuerpo Completo (90 min)',
     city: 'Coyoacán, CDMX',
-    avatar: '/images/clients/client-1.jpg',
+    avatar: client1Img,
     stars: 5,
     quote: 'El nivel de atención y el ambiente de Aura Spa es insuperable. Desde el momento en que cruzas la puerta, el aroma a botánicos y la música tenue te transportan. El masaje relajante me quitó semanas de contractura en una sola sesión.',
   },
@@ -13,7 +15,7 @@ export const testimonialsData = [
     name: 'Valeria Rivas',
     treatment: 'Paquete Reductivo Premium (10 Sesiones)',
     city: 'San Ángel, CDMX',
-    avatar: '/images/clients/client-2.jpg',
+    avatar: client2Img,
     stars: 5,
     quote: 'Completé las 10 sesiones del paquete reductivo con cavitación y maderoterapia: ¡los resultados en mi cintura y abdomen fueron asombrosos! El carnet de seguimiento y la valoración nutricional marcan la diferencia.',
   },

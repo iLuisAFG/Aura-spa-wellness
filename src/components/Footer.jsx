@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Facebook, Phone, MapPin, Mail, Clock, ArrowUp } from 'lucide-react';
+import { logoImg } from '../utils/assets';
 
 export default function Footer({ onOpenBooking, onOpenFlyers }) {
   const scrollToTop = () => {
@@ -26,7 +27,7 @@ export default function Footer({ onOpenBooking, onOpenFlyers }) {
         <div className="flex flex-col items-center text-center pb-12 border-b border-sage-800/80">
           <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden flex items-center justify-center border-2 border-sage-500/40 mb-4 shadow-lg bg-cream-50">
             <img
-              src="/images/logo.jpg"
+              src={logoImg}
               alt="Aura Spa Wellness Logo Oficial"
               className="w-full h-full object-cover object-center"
             />
